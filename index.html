@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Interest Inventory</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Student Interest Inventory</h1>
+        <p id="description">Please fill out this form.</p>
+    </header>
+    <main>
+        <section>
+            <div>
+                <form id="survey-form">
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td id="cell2"><label for="name-label" id="name-label"><input type="text" id="name"
+                                        placeholder="Name"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Email Address:</td>
+                            <td id="cell2"><label for="email-label" id="email-label"><input type="email" id="email"
+                                        placeholder="Email address"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Age:</td>
+                            <td id="cell2"><label for="number-label" id="number-label"><input type="number" id="number"
+                                        placeholder="Age" min="18" max="23"></label></td>
+                        </tr>
+                        <tr>
+                            <td>City/State:</td>
+                            <td id="cell2"><select id="dropdown">
+                                    <option value="Rajkot / Gujarat">Rajkot / Gujarat</option>
+                                    <option value="Surat / Gujarat">Surat / Gujarat</option>
+                                    <option value="Vadodara / Gujarat">Vadodara / Gujarat</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td><label for="male"><input type="radio" value="Male" name="gender">Male</label>
+                                <label for="female"><input type="radio" value="Female" name="gender">Female</label></td>
+                        </tr>
+                        <tr>
+                            <td>Which of the following sports are you interested in?</td>
+                            <td><label for="cricket"><input type="checkbox" value="Cricket"
+                                        name="sports">Cricket</label><br><label for="football"><input type="checkbox"
+                                        value="Football" name="sports">Football</label><br><label for="badminton"><input
+                                        type="checkbox" value="Badminton" name="sports">Badminton</label><br><label
+                                    for="volleyball"><input type="checkbox" value="Volleyball"
+                                        name="sports">Volleyball</label><br><label for="squash"><input type="checkbox"
+                                        value="Squash" name="sports">Squash</label></td>
+                        </tr>
+                        <tr>
+                            <td>Other sports, if any.</td>
+                            <td id="cell2"><textarea name="other-sports" id="other-sports" cols="70"
+                                    rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="submit" id="submit">Submit</button></td>
+                        </tr>
+
+                    </table>
+
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
